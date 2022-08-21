@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Inter&family=Nunito:wght@700&family=Yellowtail&display=swap');
+
+/* Tirando css padrão da página */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Carácteristicas do body */
+body {
+    height: 100vh;
+    background: linear-gradient(black, #313131);
+    font-family: 'Inter', sans-serif;
+}
+
+-webkit-scrollbar { 
+	display: none;
+}
+
+#add {
+    display: none;
+    width: 15.2em;
+    padding: 0.8em;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    font-weight: 700;
+    font-size: 1.1em;
+    background-color: #3d3d3d;
+    color: white;
+    transition: all 700ms;
+}
+
+#add:hover {
+    background: rgba(255, 255, 255, 0.329);
+}
+
+.entradas {
+    position: absolute;
+    left: 17vw;
+    top: 30vh;
+}
+
+input {
+    color: black;
+    height: 17px;
+    width: 230px;
+    font-weight: bold;
+    padding: 0.8em;
+    border: solid 2px transparent;
+    place-items: center;
+    position: relative;
+    border-radius: 0.4em;
+    font-size: 1.4em;
+    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+input:focus {
+    outline: none;
+    background: linear-gradient(90deg, rgb(244, 244, 244), rgb(198, 198, 198));
+}
+
+.in::before {
+    padding: 0.8em;
+    margin-left: -5px;
+    margin-top: -5px;
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 253px;
+    border-radius: 10px;
+    background: linear-gradient(#1e9600, #fff200, #ff0000);
+    z-index: 0;
+    animation: brilho 3s linear infinite;
+}
+
+
+@keyframes brilho {
+    0% { filter: hue-rotate(750deg) brightness(100%) blur(7px) }
+    100% { filter: hue-rotate(10deg) brightness(100%) blur(7px) }
+}
+
+@keyframes erro {
+    10% { translate: 20px}
+    20% { translate: -20px}
+    30% { translate: 20px}
+    40% { translate: -20px}
+    50% { translate: 20px}
+    60% { translate: -20px}
+    70% { translate: 20px}
+    80% { translate: -20px}
+    90% { translate: 20px}
+    100% { translate: -20px}
+}
+
+::-webkit-input-placeholder  { 
+    font-size: 0.8em;
+    padding: 0.2em;
+    font-weight: bold;
+    color: #3d3d3d;
+}
+
+/* +++++++++++++ */
+
+.table {
+    display: none;
+    padding: 5px;
+    top: 10em;
+    left: 60vw;
+    position: absolute;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.237);
+}
+
+.table-add {
+    color: aliceblue;
+    min-width: 25vw;
+    max-width: 30vw;
+    max-height: 62vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.table-add::-webkit-scrollbar { 
+	display: none;
+}
+    
+/* .table-add::-webkit-scrollbar {
+    width: 15px;
+}
+    
+.table-add::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: 10px;
+}
+    
+.table-add::-webkit-scrollbar-thumb {
+    border: solid 5px rgb(99, 92, 92);
+    background-color: white;
+    border-radius: 1em;
+} */
+
+.table-add > div {
+    padding: 1em;
+    border-radius: 9px;
+    background-color: #333333;
+    margin-top: 4px;
+    border-bottom: solid 2px transparent;
+}
+
+#barra {
+    height: 5px;
+    width: 10px;
+    padding: 1.2em;
+    color: #585858;
+}
+
+#pos {
+    margin-left: 1em;
+}
+
+.out {
+    margin-top: 0.6em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px;
+    display: flex;
+}
+
+.out > button {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: transparent;
+    color: white;
+    border: none;
+    transition: all 700ms;
+}
+
+.out > button:hover {
+    color: rgba(255, 255, 255, 0.499);
+    background-color: #313131;
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

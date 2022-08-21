@@ -1,12 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pódio</title>
 </head>
 <body>
+    <div id="vanta"></div>
+
+    <!-- Entradas do nome -->
+
+    <div class="entradas">
+        <div class="in">
+            <input type="text" maxlength="20" placeholder="1° colocado">
+
+            <button id="add">Adicionar</button>
+        </div>
+    </div>
+
+    <!-- Teabela -->
+    <div class="table">
+
+        <div class="table-add"></div>
+
+        <!-- Botões da tabela -->
+        <div class="out">
+
+            <button id="send" onclick="location.href = 'podium.html'" target="blank">Enviar</button>
+            <button id="clear">Apagar</button>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+    <script>
+        VANTA.BIRDS({
+            el: "#vanta",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color2: 0xfff,
+            quantity: 3.00,
+            backgroundAlpha: 0.0
+        })
+    </script>
+
+    <script defer type="module" src="js/script.js"></script>    
+
     
 </body>
 </html>
