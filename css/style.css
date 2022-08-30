@@ -17,6 +17,14 @@ body {
 	display: none;
 }
 
+.all{
+    display: block;
+}
+
+.all2 {
+    display: none;
+}
+
 #add {
     display: none;
     width: 15.2em;

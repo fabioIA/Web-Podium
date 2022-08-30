@@ -5,33 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/end.css">
+    <link rel="stylesheet" href="css/fire.css">
     <title>Pódio</title>
 </head>
 <body>
-    <div id="vanta"></div>
+    <div class="all">
 
-    <!-- Entradas do nome -->
+        <div id="vanta"></div>
 
-    <div class="entradas">
-        <div class="in">
-            <input type="text" maxlength="20" placeholder="1° colocado">
+        <!-- Entradas do nome --> 
+        <div class="entradas">
+            <div class="in">
+                <input type="text" maxlength="17" placeholder="1° colocado">
 
-            <button id="add">Adicionar</button>
+                <button id="add">Adicionar</button>
+            </div>
+        </div>
+
+        <!-- Teabela -->
+        <div class="table">
+
+            <div class="table-add"></div>
+
+            <!-- Botões da tabela -->
+            <div class="out">
+
+                <button id="send">Enviar</button>
+                <button id="clear">Apagar</button>
+
+            </div>
+
         </div>
     </div>
 
-    <!-- Teabela -->
-    <div class="table">
+    <div id="loading"><div id="f"></div><div id="s"></div><div id="t"></div></div>
 
-        <div class="table-add"></div>
+    <div class="all2">
 
-        <!-- Botões da tabela -->
-        <div class="out">
+        <canvas id="c"></canvas>
 
-            <button id="send" onclick="location.href = 'podium.html'" target="blank">Enviar</button>
-            <button id="clear">Apagar</button>
-
+        <div class="podi">
+            <section id="two"><div id="podi2"><h1 id="n2"></h1><div class="second"><div><span>2</span><div></div><div></div></div></div></div></section>
+    
+            <section id="one"><div id="podi1"><h1 id="n1"></h1><div class="first"><div><span>1</span><div></div><div></div><div></div></div></div></div></section>
+            
+            <section id="three"><div id="podi3"><h1 id="n3"></h1><div><div class="third"><div><span>3</span><div></div></div></div></section>
         </div>
+
+        <footer></footer>
+    
+        <script src="end.js"></script>
 
     </div>
 
@@ -54,8 +78,8 @@
         })
     </script>
 
-    <script defer type="module" src="js/script.js"></script>    
-
-    
+    <script defer type="module" src="js/end.js"></script>
+    <script defer type="module" src="js/script.js"></script>   
+    <script src="js/fire.js"></script>
 </body>
 </html>
